@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Asset Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./asset_dashboard.css" />
+  </head>
+  <body>
+    <h1>Asset Dashboard</h1>
+
+    <div id="summary">
+      <h2>Summary</h2>
+      <p>Total Assets: <span id="totalAssets"></span></p>
+      <p>Total Deployed Assets: <span id="totalDeployedAssets"></span></p>
+      <p>Total Available Assets: <span id="totalAvailableAssets"></span></p>
+    </div>
+
+    <div id="assetsTable">
+      <h2>Assets Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Asset ID</th>
+            <th>Asset Name</th>
+            <th>Serial</th>
+            <th>Category</th>
+            <th>Owner Name</th>
+            <th>Region</th>
+            <th>Province</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="assetsTableBody"></tbody>
+      </table>
+    </div>
+    <script src="./script.js" type="module"></script>
+    <script src="./assets/asset_Dataset.js" type="module"></script>
+  </body>
+</html>
